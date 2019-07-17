@@ -1,0 +1,101 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.accident {
+    height: 18vw;
+    width: 18vw;
+    border-radius: 50%;
+    background-color: #cc99ff;
+    display: flex;
+    flex-direction: column;
+    margin: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="button"] {
+    border: none;
+    outline: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    background-color: white;
+    text-shadow: 0 0 25px #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.header button {
+    height: 25vmin;
+    width: 25vmin;
+    border-radius: 50%;
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: none;
+    text-shadow: 7px 2px 20px #000;
+    text-decoration: none;
+    border: 0px solid transparent;
+    transition: .2s linear
+}
+
+.header button:hover {
+    cursor: pointer;
+    transform: scale(1.25)
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.ambulance {
+    background-image: url('../img/ambulance.png');
+}
+
+.policeman {
+    background-image: url('../img/police.png');
+}
+
+.emergency {
+    background-image: url('../img/emergency.png');
+}
+
+@media screen and (orientation: portrait) {
+    .header {
+        flex-direction: column
+    }
+}
+@media screen and (orientation: landscape) {
+    .header {
+        flex-direction: row
+    }
+}
