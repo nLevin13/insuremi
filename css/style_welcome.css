@@ -16,8 +16,6 @@ body {
 }
 
 #wrapper {
-    margin: 0px;
-    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,7 +26,7 @@ body {
     background: linear-gradient(to left, #3F5EFB, #FC466B);
     width: 100vw;
     height: 100vh;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .header {
@@ -99,11 +97,6 @@ input[type='submit']:hover {
     color: #FC466B;
 }
 
-a:hover {
-    cursor: pointer;
-    color: #FC466B;
-}
-
 input[type="button"] {
     border: none;
     outline: none;
@@ -118,6 +111,43 @@ input[type="button"] {
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+.scan-wrapper {
+    width: 99%;
+    height: 99%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scan {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.header-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 20vh;
+}
+
+.emergencies a {
+    font-size: 5rem;
+    transition: .2s linear
+}
+
+.invisible {
+    visibility: hidden;
 }
 
 .emergencies button {
@@ -140,6 +170,12 @@ input[type="button"] {
     box-shadow: 0px 0px 56px rgba(255, 255, 255, 0.95);
 }
 
+.emergencies a:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    text-shadow: 0px 0px 56px rgba(255, 255, 255, 0.95);
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -153,11 +189,11 @@ form {
 }
 
 .policeman {
-    background-image: url('../img/police.png');
+    background-image: url('../img/policeman.png');
 }
 
-.emergency {
-    background-image: url('../img/emergency.png');
+.firetruck {
+    background-image: url('../img/firetruck.png');
 }
 
 .next {
@@ -165,7 +201,7 @@ form {
     width: 80px;
     border-radius: 50%;
     margin: 20px;
-    font-size: 50pt;
+    font-size: 30pt;
     display: flex;
     align-items: center;
     justify-content: center;
