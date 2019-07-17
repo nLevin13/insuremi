@@ -34,25 +34,26 @@
     <!--FONTS-->
 
     <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_welcome.css">
     <!--CSS-->
 
 
 </head>
 
 <body>
-    <div class="wrapper">
+    <div id="wrapper">
         <div class="header">
             InsureMe
         </div>
-        <div class="wrapper">
-            <div class="emerg-contact">ALERT EMERGENCY CONTACT?</div>
-            <form>
-            <input type="button" class="accident" value="YES" />
-            <input type="button" class="accident" value="NO" />
-            </form>
-            <div>don't have an account? <a href='/signup'> <br/> sign up, for free</a></div>
-        </div>        
+        <form action="/login" method='post'>
+            Vehicle Owner Name: <input type='text' placehoder="name" name=ownername><br>
+            Car Numberplate Number:<input type='text' placehoder='number plate' name=carnumberplate><br>
+            Phone Number: <input type='text' placehoder='phone number' name=phonenum><br>
+            Email Address: <input type='text' placehoder='email address' name=emailadd><br>
+            Insurance Company:<input type='text' placehoder='insurance company' name=insurancecompany><br>
+            Insurance Policy Number<input type='text' placehoder='policy number' name=policynum><br>
+            <input type='submit' value='Submit'><br>
+        </form>
         <footer>
             InsureMe
         </footer>
@@ -76,4 +77,3 @@
 </body>
 
 </HTML>
-
