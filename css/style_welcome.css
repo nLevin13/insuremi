@@ -16,8 +16,6 @@ body {
 }
 
 #wrapper {
-    margin: 0px;
-    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,7 +26,7 @@ body {
     background: linear-gradient(to left, #3F5EFB, #FC466B);
     width: 100vw;
     height: 100vh;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .header {
@@ -115,12 +113,32 @@ input[type="button"] {
     padding: 20px;
 }
 
-.header-footer{
+h2 {
+    font-size: 5rem;
+}
+
+.scan-wrapper {
+    width: 99%;
+    height: 99%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scan {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.header-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    height:20vh;
+    height: 20vh;
 }
 
 .emergencies a {
@@ -128,9 +146,10 @@ input[type="button"] {
     transition: .2s linear
 }
 
-.invisible{
+.invisible {
     visibility: hidden;
 }
+
 .emergencies button {
     height: 25vmin;
     width: 25vmin;
@@ -182,7 +201,7 @@ form {
     width: 80px;
     border-radius: 50%;
     margin: 20px;
-    font-size: 50pt;
+    font-size: 30pt;
     display: flex;
     align-items: center;
     justify-content: center;
