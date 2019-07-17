@@ -8,8 +8,7 @@ from sys import argv
 
 @error(404)
 def not_found(error):
-    section_template = "./templates/404.tpl"
-    return template("./pages/index.html", version=utils.getVersion(), sectionTemplate=section_template, sectionData = {})
+    return template("./error.html")
 
 
 @get("/js/<filepath:re:.*\.js>")
@@ -22,14 +21,48 @@ def css(filepath):
     return static_file(filepath, root="./css")
 
 
-@get("/images/<filepath:re:.*\.(jpg|png|gif|ico|svg)>")
+@get("/img/<filepath:re:.*\.(jpg|png|gif|ico|svg)>")
 def img(filepath):
-    return static_file(filepath, root="./images")
+    return static_file(filepath, root="./img")
 
 
 @route('/')
 def index():
     return template("./start.html")
+
+@route('/q1')
+def index():
+    return template("./q1.html")
+
+
+@route('/q2')
+def index():
+    return template("./q2.html")
+
+
+@route('/q3')
+def index():
+    return template("./q3.html")
+
+
+@route('/q4')
+def index():
+    return template("./q4.html")
+
+
+@route('/q5')
+def index():
+    return template("./q5.html")
+
+
+@route('/q6')
+def index():
+    return template("./q6.html")
+
+
+@route('/q7')
+def index():
+    return template("./q7.html")
 
 
 def main():
