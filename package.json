@@ -1,0 +1,27 @@
+{
+  "name": "insuremi",
+  "version": "1.0.0",
+  "description": "hackathon packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nLevin13/insuremi.git"
+  },
+  "keywords": [
+    "insure",
+    "accident"
+  ],
+  "author": "nir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nLevin13/insuremi/issues"
+  },
+  "homepage": "https://github.com/nLevin13/insuremi#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}
