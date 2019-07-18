@@ -173,8 +173,7 @@ h2 {
 
 .emergencies a {
     font-size: 5rem;
-    transition: .2s linear
-    flex-direction: column
+    transition: .2s linear;
 }
 
 .invisible {
@@ -206,7 +205,6 @@ h2 {
     transform: scale(1.25);
     text-shadow: 0px 0px 56px rgba(255, 255, 255, 0.95);
 }
-
 
 form {
     display: flex;
@@ -243,7 +241,6 @@ form {
     transition: .2s linear
 }
 
-
 #wrapper-phonecall {
     display: none;
     position: fixed;
@@ -259,19 +256,35 @@ form {
     border: 2vh solid red;
 }
 
-
-#phone-text{
+#phone-text {
     position: absolute;
     text-align: center;
     font-size: 10vh;
     color: red;
     top: 15%;
     left: 35%;
-    }
+}
 
+form>label {
+    text-align: center;
+    font-size: 2rem;
+}
 
+#player {
+    width: 320px;
+    height: 240px;
+}
 
+.submit_to_insurance {
+    font-size: 2rem!important;
+    min-height: 250px;
+    min-width: 250px;
+}
 
+canvas {
+    width: 320px;
+    height: 240px;
+}
 
 @media screen and (orientation: portrait) {
     .start {

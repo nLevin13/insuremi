@@ -14,7 +14,6 @@
     <!--font awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!--font awesome-->
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
@@ -22,27 +21,30 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="./css/style_welcome.css">
+    <link rel="stylesheet" href="./css/webcam_style.css">
     <!--CSS-->
 </head>
 
 <body>
     <div id="wrapper">
-        <div class='header-footer'>Scan counterparts plate</div>
-        <div class="scan-wrapper">
-            <div class="scan"></div>
-        </div>
+        <div class='header-footer'>Scan your plate</div>
+        <video class="scan-wrapper" id="player" autoplay></video>
+        <canvas id="canvas" width="320px" height="240px"></canvas>
+        <label> License plate: </label>
+        <input type='text'>
         <div class='header-footer'>
             <button class='next invisible'>
                 <i class="fas fa-redo-alt"></i>
             </button>
-            <button class='next '>
-                    <i class="fas fa-circle"></i>
-                </button>
-            <button class='next invisible'>
+            <button class='next' id="capture-btn" >
+                <i class="fas fa-circle"></i>
+            </button>
+            <button class='next invisible' id='next_06' >
                 <i class="fas fa-angle-right"></i>
             </button>
         </div>
     </div>
+
 
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -51,7 +53,7 @@
 
     <!-- js file -->
     <script src="./js/logic1.js"></script>
-    <!-- js file -->
+    <script src="./js/webcam_working.js"></script>
 </body>
 
 </HTML>

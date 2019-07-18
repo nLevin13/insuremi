@@ -64,8 +64,14 @@ $(document).ready(function () {
     $('#next_00').click(function () {
         window.location.href = 'q1.html'
     });
-
-
+    $('#capture-btn').click(function () {
+        if ($('#next_05').length > 0) {
+            $('#next_05').removeClass('invisible')
+        }
+        if ($('#next_06').length > 0) {
+            $('#next_06').removeClass('invisible')
+        }
+    });
 });
 
 
