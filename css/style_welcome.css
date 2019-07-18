@@ -274,11 +274,12 @@ form {
 }
 
 #phone-text {
-    position: absolute;
+    position: relative;
     text-align: center;
     font-size: 10vh;
     color: blue;
     top: 20%;
+    left: 50%;
     }
 
 form>label {
@@ -302,7 +303,7 @@ form>label {
     font-size: 10vh;
     color: blue;
     top: 20%;
-    left: 12%;
+    left: 25%;
     }
 
 canvas {
