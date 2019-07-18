@@ -36,6 +36,7 @@ $(document).ready(function () {
         } else if(this.id === "next_00"){
         window.location.href = 'q1'
         }
+  });
 
 
     if ($("#countdown").length >0) {
@@ -53,21 +54,6 @@ $(document).ready(function () {
             }
         }, 1000);
     }
-
-//    $('#signUp').click(function () {
-//        window.location.href = 'sign_up2'
-//    });
-//    $('#signIn').click(function () {
-//        window.location.href = 'sign_in.'
-//    });
-//    $('#next_00').click(function () {
-//        window.location.href = 'q1'
-//    });
-
-
-    });
-
-
 
 
 });
