@@ -147,6 +147,16 @@ def index():
     return template("./q10.html")
 
 
+@route('/q11.html')
+def index():
+    return template("./q11.html")
+
+
+@route('/q11')
+def index():
+    return template("./q11.html")
+
+
 @route('/sign_in.html')
 def index():
     return template("./sign_in.html")

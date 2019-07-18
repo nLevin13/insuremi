@@ -1,10 +1,10 @@
 $(document).ready(function () {
     $(":button").click(function () {
-        
-        if(this.id === "emergency"){
+
+        if (this.id === "emergency") {
             $("#wrapper-phonecall").css("display", "block");
             closeModal('q3')
-        }else if (this.id === "next_01") {
+        } else if (this.id === "next_01") {
             window.location.href = 'q2'
         } else if (this.id === "next_02" || this.id === "no-emergency") {
             window.location.href = 'q3'
@@ -50,7 +50,7 @@ $(document).ready(function () {
         }, 1000);
     }
 
-     if ($("#countdown1").length > 0) {
+    if ($("#countdown1").length > 0) {
         var timeleft = parseInt($('#countdown1').html())
         $("#countdown1").html(timeleft);
         var timer = setInterval(function () {
@@ -61,11 +61,13 @@ $(document).ready(function () {
                 $("#phone-text").text("AMBULANCE IS ON THE WAY!");
                 $("#wrapper-phonecall").css("display", "block");
                 setInterval(function () {
-                $("#wrapper-phonecall").css("display", "none")
+                    $("#wrapper-phonecall").css("display", "none")
                 }, 4000)
                 $("#wrapper-phonecall").css("display", "block");
                 $("#phone-text").text("AMBULANCE AND POLICE ARE ON THE WAY!");
-
+                setInterval(function () {
+                    window.location.href = 'q11'
+                }, 4500)
             }
         }, 1000);
     }
