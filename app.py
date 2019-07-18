@@ -72,7 +72,6 @@ def index():
     return template("./q7.html")
 
 
-
 def main():
     run(host='localhost', port=8080, debug=True)
 
