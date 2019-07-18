@@ -29,19 +29,29 @@
 <body>
     <div id="wrapper">
         <div class="emergencies">
-            <button class="ambulance" id="phonecall"></button>
-            <button class="policeman" id="phonecall"></button>
-            <button class="firetruck" id="phonecall"></button>
+            <button class="ambulance" id="ambulance"></button>
+            <button class="policeman" id="policeman"></button>
+            <button class="firetruck" id="firetruck"></button>
         </div>
         <div>
             <button id='next_01'>
                 I AM FINE
             </button>
         </div>
+
         <div id="wrapper-phonecall">
-            <h2>HELP IS ON THE WAY</h2>
+
+            <div class="modal-header">
+                <span id="modal-close"><button value="Cancel" id="cancel-call">Cancel</button>
+                </span>
+            </div>
+            <div><h2 id="phone-text">HELP </br> IS </br> ON <br/> THE <br/> WAY!</h2>
+            </div>
+            <div class="modal-footer">
+
         </div>
-    </div>
+
+
 
 
     <!--JQUERY-->
@@ -50,7 +60,7 @@
     <!--JQUERY-->
 
     <!-- js file -->
-    <script src="./js/logic.js"></script>
+    <script src="./js/logic1.js"></script>
     <!-- js file -->
 </body>
 
