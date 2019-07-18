@@ -1,15 +1,294 @@
-
 body {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0px;
+    text-align: right;
+}
+
+ul li {
+    font-size: 12pt;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
     background: #FC466B;
     background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);
     background: linear-gradient(to left, #3F5EFB, #FC466B);
-    width: 100vw;
-    height: 100vh;
-}s
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, .25);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.scan-wrapper ul {
+    list-style: none;
+    text-align: center;
+}
+
+.scan-wrapper ul li {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+input[type='text'] {
+    border-radius: 3px;
+    height: 30px;
+    border: 0px solid transparent;
+}
+
+form, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'Arvo', serif;
+}
+
+#wrapper .start img {
+    height: 40vmin;
+    width: 40vmin;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, .25);
+    height: 30px;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type='submit'] {
+    border-radius: 3px;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 16pt;
+    transition: .5s linear;
+    text-align: center
+}
+
+ul li a:hover {
+    cursor: pointer;
+    color: #FC466B;
+}
+
+input[type='submit']:hover {
+    background-color: rgba(255, 255, 255, .5);
+    font-size: 16pt;
+}
+
+input[type="button"] {
+    border: none;
+    outline: none;
+}
+
+.emergencies {
+    text-shadow: 0 0 25px #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+.scan-wrapper {
+    width: 99%;
+    height: 99%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scan {
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.header-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    height: 20vh;
+    width: 97%;
+    padding: 20px;
+}
+
+.jus-con-end {
+    justify-content: flex-end!important;
+    height: min-content!important;
+}
+
+.emergencies a {
+    font-size: 5rem;
+    transition: .2s linear
+    flex-direction: column
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.emergencies button {
+    height: 25vmin;
+    width: 25vmin;
+    border-radius: 50%;
+    background-size: auto 75%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    text-shadow: 7px 2px 20px #000;
+    text-decoration: none;
+    border: 0px solid transparent;
+    transition: .2s linear
+}
+
+.emergencies button:hover, .next:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    box-shadow: 0px 0px 56px rgba(255, 255, 255, 0.95);
+}
+
+.emergencies a:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    text-shadow: 0px 0px 56px rgba(255, 255, 255, 0.95);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.ambulance {
+    background-image: url('../img/ambulance_03.png');
+}
+
+.policeman {
+    background-image: url('../img/policeman.png');
+}
+
+.firetruck {
+    background-image: url('../img/firetruck.png');
+}
+
+.next {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 20px;
+    font-size: 30pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: transparent;
+    border: 4px solid white;
+    transition: .2s linear
+}
+
+
+#wrapper-phonecall {
+    display: none;
+    position: fixed;
+    z-index: 1000000;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    left: 15%;
+    background-color: white;
+    border: 2vh solid red;
+}
+
+
+#phone-text{
+    position: absolute;
+    text-align: center;
+    font-size: 10vh;
+    color: red;
+    top: 15%;
+    left: 35%;
+    }
+
+
+
+
+
+@media screen and (orientation: portrait) {
+    .start {
+        flex-direction: column
+    }
+    .emergencies {
+        flex-direction: column
+    }
+}
+
+/* change to rows if we want responsiveness */
+
+@media screen and (orientation: landscape) {
+    .start {
+        flex-direction: column
+    }
+    .emergencies {
+        flex-direction: column
+    }
+}
