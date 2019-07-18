@@ -15,6 +15,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0px;
+    text-align: right;
+}
+
+ul li {
+    font-size: 12pt;
+}
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -24,8 +35,8 @@ body {
     background: #FC466B;
     background: -webkit-linear-gradient(to left, #3F5EFB, #FC466B);
     background: linear-gradient(to left, #3F5EFB, #FC466B);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -37,6 +48,16 @@ body {
     color: white;
     align-items: center;
     justify-content: center;
+}
+
+.scan-wrapper ul {
+    list-style: none;
+    text-align: center;
+}
+
+.scan-wrapper ul li {
+    padding: 10px;
+    font-size: 2rem;
 }
 
 input[type='text'] {
@@ -89,12 +110,14 @@ input[type='submit'] {
     text-align: center
 }
 
-input[type='submit']:hover {
-    color: transparent;
-    background-color: rgba(255, 255, 255, .5);
-    font-size: 16pt;
+ul li a:hover {
     cursor: pointer;
     color: #FC466B;
+}
+
+input[type='submit']:hover {
+    background-color: rgba(255, 255, 255, .5);
+    font-size: 16pt;
 }
 
 input[type="button"] {
@@ -139,6 +162,13 @@ h2 {
     align-items: center;
     font-size: 2rem;
     height: 20vh;
+    width: 97%;
+    padding: 20px;
+}
+
+.jus-con-end {
+    justify-content: flex-end!important;
+    height: min-content!important;
 }
 
 .emergencies a {
@@ -252,11 +282,13 @@ form {
     }
 }
 
+/* change to rows if we want responsiveness */
+
 @media screen and (orientation: landscape) {
     .start {
-        flex-direction: row
+        flex-direction: column
     }
     .emergencies {
-        flex-direction: row
+        flex-direction: column
     }
 }
