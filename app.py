@@ -122,6 +122,11 @@ def index():
     return template("./sign_up2.html")
 
 
+@route('/sign_up2.html')
+def index():
+    return template("./sign_up2.html")
+
+
 def main():
     run(host='localhost', port=8080, debug=True)
 
