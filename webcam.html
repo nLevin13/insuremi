@@ -23,33 +23,35 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/style_welcome.css">
     <!--CSS-->
+
+    <style>
+        #myOnlineCamera video {
+            width: 320px;
+            height: 240px;
+            margin: 15px;
+            float: left;
+        }
+
+        #myOnlineCamera canvas {
+            width: 320px;
+            height: 240px;
+            margin: 15px;
+            float: left;
+        }
+
+        #myOnlineCamera button {
+            clear: both;
+            margin: 30px;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class='header-footer'>Please attach images or videos:</div>
-        <div class="scan-wrapper">
-            <div class="scan"></div>
-        </div>
-        <div class='header-footer'>
-            <button class='next invisible'>
-                <i class="fas fa-redo-alt"></i>
-            </button>
-            <button class='next '>
-                    <i class="fas fa-circle"></i>
-                </button>
-            <button class='next invisible'>
-                <i class="fas fa-angle-right"></i>
-            </button>
-        </div>
+    <div id="myOnlineCamera">
+        <video></video>
+        <canvas></canvas>
+        <button>Take Photo!</button>
     </div>
-
-
-    <!-- OFFLINE -->
-    <script src="./offline/babel.js"></script>
-    <script src="./offline/react.js"></script>
-    <script src="./offline/react-dom.js"></script>
-    <!-- OFFLINE -->
 
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"

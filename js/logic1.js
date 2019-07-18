@@ -19,7 +19,52 @@ $(document).ready(function () {
             window.location.href = 'q5'
         } else if (this.id === "cancel-call"){
         $("#wrapper-phonecall").css("display", "none")
+        } else if (this.id === "next_05") {
+            window.location.href = 'q6'
+        } else if (this.id === "next_06") {
+            window.location.href = 'q7'
+        } else if (this.id === "next_07") {
+            window.location.href = 'q8'
+        } else if (this.id === "next_08") {
+            window.location.href = 'q9'
+        } else if (this.id === "next_09") {
+            window.location.href = 'q10'
+        } else if (this.id === "signUp"){
+        window.location.href = 'sign_up2'
+        } else if (this.id === "logIn" || this.id === "signIn") {
+        window.location.href = "sign_in"
+        } else if(this.id === "next_00"){
+        window.location.href = 'q1'
         }
+
+
+    if ($("#countdown").length >0) {
+        var timeleft = parseInt($('#countdown').html())
+        $("#countdown").html(timeleft);
+        var timer = setInterval(function () {
+            $("#countdown").html(timeleft);
+            timeleft -= 1;
+            if (timeleft == -1) {
+                clearInterval(timer);
+                $("#countdown").html('Good');
+                setInterval(function () {
+                    window.location.href = 'q4'
+                }, 2000)
+            }
+        }, 1000);
+    }
+
+//    $('#signUp').click(function () {
+//        window.location.href = 'sign_up2'
+//    });
+//    $('#signIn').click(function () {
+//        window.location.href = 'sign_in.'
+//    });
+//    $('#next_00').click(function () {
+//        window.location.href = 'q1'
+//    });
+
+
     });
 
 
@@ -32,5 +77,17 @@ $(document).ready(function () {
     console.log("in timeout")
     setTimeout(function(){$("#wrapper-phonecall").css("display", "none"), window.location.href = q}, 3000);
     };
+
+//    function hasGetUserMedia() {
+//        return !!(navigator.mediaDevices &&
+//          navigator.mediaDevices.getUserMedia);
+//      }
+//
+//      if (hasGetUserMedia()) {
+//        // Good to go!
+//        console.log('good to go')
+//      } else {
+//        alert('getUserMedia() is not supported by your browser');
+//      }
 
 
