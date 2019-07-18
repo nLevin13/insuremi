@@ -37,9 +37,29 @@ def index():
     return template("./start.html")
 
 
+@route('/start')
+def index():
+    return template("./start.html")
+
+
+@route('/start.html')
+def index():
+    return template("./start.html")
+
+
+@route('/q1.html')
+def index():
+    return template("./q1.html")
+
+
 @route('/q1')
 def index():
     return template("./q1.html")
+
+
+@route('/q2.html')
+def index():
+    return template("./q2.html")
 
 
 @route('/q2')
@@ -47,9 +67,19 @@ def index():
     return template("./q2.html")
 
 
+@route('/q3.html')
+def index():
+    return template("./q3.html")
+
+
 @route('/q3')
 def index():
     return template("./q3.html")
+
+
+@route('/q4.html')
+def index():
+    return template("./q4.html")
 
 
 @route('/q4')
@@ -57,9 +87,19 @@ def index():
     return template("./q4.html")
 
 
+@route('/q5.html')
+def index():
+    return template("./q5.html")
+
+
 @route('/q5')
 def index():
     return template("./q5.html")
+
+
+@route('/q6.html')
+def index():
+    return template("./q6.html")
 
 
 @route('/q6')
@@ -67,9 +107,34 @@ def index():
     return template("./q6.html")
 
 
+@route('/q7.html')
+def index():
+    return template("./q7.html")
+
+
 @route('/q7')
 def index():
     return template("./q7.html")
+
+
+@route('/sign_in.html')
+def index():
+    return template("./sign_in.html")
+
+
+@route('/sign_in')
+def index():
+    return template("./sign_in.html")
+
+
+@route('/sign_up2')
+def index():
+    return template("./sign_up2.html")
+
+
+@route('/sign_up2.html')
+def index():
+    return template("./sign_up2.html")
 
 
 def main():

@@ -23,34 +23,47 @@
     <!--CSS-->
     <link rel="stylesheet" href="./css/style_welcome.css">
     <!--CSS-->
+
+    <style>
+        #myOnlineCamera video {
+            width: 320px;
+            height: 240px;
+            margin: 15px;
+            float: left;
+        }
+
+        #myOnlineCamera canvas {
+            width: 320px;
+            height: 240px;
+            margin: 15px;
+            float: left;
+        }
+
+        #myOnlineCamera button {
+            clear: both;
+            margin: 30px;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="wrapper">
-        <div class='header-footer'>Scan counterparts plate</div>
-        <div class="scan-wrapper">
-            <div class="scan"></div>
-        </div>
-        <div class='header-footer'>
-            <button class='next invisible'>
-                <i class="fas fa-redo-alt"></i>
-            </button>
-            <button class='next '>
-                    <i class="fas fa-circle"></i>
-                </button>
-            <button class='next invisible'>
-                <i class="fas fa-angle-right"></i>
-            </button>
-        </div>
-    </div>
-
+    <input type="file" accept="image/*;capture=camera">
+    <input type="file" accept="video/*;capture=camcorder">
+    <input type="file" accept="audio/*;capture=microphone">
+    <device type="media" onchange="update(this.data)"></device>
+    <video autoplay></video>
+    <script>
+        function update(stream) {
+            document.querySelector('video').src = stream.url;
+        }
+    </script>
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!--JQUERY-->
 
     <!-- js file -->
-    <script src="./js/logic1.js"></script>
+    <script src="./js/webcam03.js"></script>
     <!-- js file -->
 </body>
 
