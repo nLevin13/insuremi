@@ -17,6 +17,11 @@ def js(filepath):
     return static_file(filepath, root="./js")
 
 
+@get("/offline/<filepath:re:.*\.js>")
+def js(filepath):
+    return static_file(filepath, root="./js")
+
+
 @get("/css/<filepath:re:.*\.css>")
 def css(filepath):
     return static_file(filepath, root="./css")
@@ -30,6 +35,7 @@ def img(filepath):
 @route('/')
 def index():
     return template("./start.html")
+
 
 @route('/q1')
 def index():
