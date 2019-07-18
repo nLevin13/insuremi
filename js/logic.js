@@ -29,6 +29,20 @@ $(document).ready(function () {
         }
     });
 
+    var timeleft = 4;
+    $("#countdown").html(timeleft);
+    var timer = setInterval(function () {
+        $("#countdown").html(timeleft);
+        timeleft -= 1;
+        if (timeleft == -1) {
+            clearInterval(timer);
+            $("#countdown").html('Good');
+            setInterval(function () {
+                window.location.href = 'q4.html'
+            },2000)
+        }
+    }, 1000);
+
     $('#signUp').click(function () {
         window.location.href = 'sign_up2.html'
     });
