@@ -5,10 +5,19 @@ $(document).ready(function () {
         if (this.id === "ambulance" || this.id === "firetruck" || this.id === "policeman") {
             console.log("working")
             $("#wrapper-phonecall").css("display", "block");
-            closeModal('q2')
+            if(this.id === "ambulance"){
+            console.log("ambulance")
+            $("#phone-text").text("AMBULANCE IS ON THE WAY!");
+            }else if(this.id === "firetruck"){
+            $("#phone-text").text("FIREFIGHTERS ARE ON THE WAY!");
+            }else if(this.id === "policeman"){
+            $("#phone-text").text("POLICE ARE ON THE WAY!");
+            }
         } else if(this.id === "emergency"){
             $("#wrapper-phonecall").css("display", "block");
-            closeModal('q3')
+
+        } else if(this.id === "emergency"){
+            $("#wrapper-phonecall").css("display", "block");
         }else if (this.id === "next_01") {
             window.location.href = 'q2'
         } else if (this.id === "next_02" || this.id ==="no-emergency") {
@@ -59,21 +68,7 @@ $(document).ready(function () {
 });
 
 
-    var closeModal = function(q){
-    console.log("in timeout")
-    setTimeout(function(){$("#wrapper-phonecall").css("display", "none"), window.location.href = q}, 3000);
-    };
-
-//    function hasGetUserMedia() {
-//        return !!(navigator.mediaDevices &&
-//          navigator.mediaDevices.getUserMedia);
-//      }
-//
-//      if (hasGetUserMedia()) {
-//        // Good to go!
-//        console.log('good to go')
-//      } else {
-//        alert('getUserMedia() is not supported by your browser');
-//      }
-
-
+//    var closeModal = function(q){
+//    console.log("in timeout")
+//    setTimeout(function(){$("#wrapper-phonecall").css("display", "none"), window.location.href = q}, 3000);
+//    };
