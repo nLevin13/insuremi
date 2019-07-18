@@ -116,6 +116,24 @@ def index():
 def index():
     return template("./q7.html")
 
+@route('/q8.html')
+def index():
+    return template("./q8.html")
+
+
+@route('/q8')
+def index():
+    return template("./q8.html")
+
+
+@route('/q9.html')
+def index():
+    return template("./q9.html")
+
+
+@route('/q9')
+def index():
+    return template("./q9.html")
 
 @route('/sign_in.html')
 def index():
