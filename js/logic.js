@@ -1,9 +1,6 @@
 $(document).ready(function () {
     $(":button").click(function () {
-        console.log("button click")
-        console.log(this)
         if (this.id === "phonecall") {
-            console.log("working")
             $("#wrapper-phonecall").css("display", "block");
             setTimeout(function () {
                 $("wrapper-phonecall").css("display", "none"), 50000
@@ -29,20 +26,21 @@ $(document).ready(function () {
         }
     });
 
-    var timeleft = 4;
-    $("#countdown").html(timeleft);
-    var timer = setInterval(function () {
+    if ($("#countdown").length >0) {
+        var timeleft = parseInt($('#countdown').html())
         $("#countdown").html(timeleft);
-        timeleft -= 1;
-        if (timeleft == -1) {
-            clearInterval(timer);
-            $("#countdown").html('Good');
-            setInterval(function () {
-                window.location.href = 'q4.html'
-            },2000)
-        }
-    }, 1000);
-
+        var timer = setInterval(function () {
+            $("#countdown").html(timeleft);
+            timeleft -= 1;
+            if (timeleft == -1) {
+                clearInterval(timer);
+                $("#countdown").html('Good');
+                setInterval(function () {
+                    window.location.href = 'q4.html'
+                }, 2000)
+            }
+        }, 1000);
+    }
     $('#signUp').click(function () {
         window.location.href = 'sign_up2.html'
     });
