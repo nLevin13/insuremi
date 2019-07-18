@@ -1,14 +1,12 @@
-button#logIn, button#signIn, button#signUp, button#cancel-call, button#next_01 button.next{
-background-color: transparent !important;
-border: none;
-font-size: 1rem;
-text-decoration: underline;
-color: blue;
-margin: 1vh;
-text-align: right;
+button#logIn, button#signIn, button#signUp, button#cancel-call, button#next_01 button.next {
+    background-color: transparent !important;
+    border: none;
+    font-size: 1rem;
+    text-decoration: underline;
+    color: blue;
+    margin: 1vh;
+    text-align: right;
 }
-
-
 
 body {
     margin: 0px;
@@ -122,8 +120,7 @@ input[type='submit'] {
     text-align: center
 }
 
-
-button#logIn:hover, button#signUp:hover, button#next_01:hover button#cancel-call:hover button#next_01:hover{
+button#logIn:hover, button#signUp:hover, button#next_01:hover button#cancel-call:hover button#next_01:hover {
     cursor: pointer;
     color: #FC466B;
 }
@@ -168,10 +165,12 @@ h2 {
     width: 100%;
     height: 100%;
 }
-.header-footer ul li a:hover{
+
+.header-footer ul li a:hover {
     cursor: pointer;
     color: #FC466B;
 }
+
 .header-footer {
     display: flex;
     justify-content: center;
@@ -261,26 +260,22 @@ form {
     display: none;
     position: fixed;
     z-index: 1000000;
-    left: 0;
-    top: 0;
     width: 70%;
-    height: 100%;
+    height: 98%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    left: 15%;
     background-color: white;
-    border: 2vh solid blue;;
+    border: 2vh solid blue;
+    ;
     text-align: center;
+    font-size: 4rem;
 }
 
 #phone-text {
-    position: relative;
     text-align: center;
     font-size: 10vh;
     color: blue;
     top: 20%;
-    left: 50%;
-    }
+}
 
 form>label {
     text-align: center;
@@ -297,14 +292,15 @@ form>label {
     min-height: 250px;
     min-width: 250px;
 }
-#phone-text2{
+
+#phone-text2 {
     position: absolute;
     text-align: center;
     font-size: 10vh;
     color: blue;
     top: 20%;
     left: 25%;
-    }
+}
 
 canvas {
     width: 320px;
