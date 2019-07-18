@@ -1,4 +1,4 @@
-button#logIn, button#signIn, button#signUp, button#cancel-call, button#next_01{
+button#logIn, button#signIn, button#signUp, button#cancel-call, button#next_01 button.next{
 background-color: transparent !important;
 border: none;
 font-size: 1rem;
