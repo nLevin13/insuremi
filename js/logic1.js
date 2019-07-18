@@ -62,7 +62,7 @@ $(document).ready(function () {
                 $("#wrapper-phonecall").css("display", "block");
                 setInterval(function () {
                 $("#wrapper-phonecall").css("display", "none")
-                }, 2000)
+                }, 4000)
                 $("#wrapper-phonecall").css("display", "block");
                 $("#phone-text").text("AMBULANCE AND POLICE ARE ON THE WAY!");
 
