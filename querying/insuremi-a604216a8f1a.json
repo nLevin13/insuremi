@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "insuremi",
+  "private_key_id": "a604216a8f1af4a024a49dcad8d9a8d6f1eb348a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD6IYQYx9rzjvEz\nFz8VZPuo95HCBfbRlrnlebIXwuovZgVw8JevJ6H1rtdeMS/J12t/nkUFpv7xxcX7\ni8kg/JpGvye8HMW3XVge6qJxQfXIbzYh8v9d/3wXnKZx6aF771iq4txXwzRT0qWt\nJcNHk1TB9+UTLyBEX1iTykqSMHhettMaD3RRlsUu0pC8+X2Wzjr6sg8JHPEl1inF\nNf8nMI+IIS1A3ZJU/cD7YxWb+ceqnAjoZ0BQTkmGibXB3h9bkoaQO/T/zvHBvXHH\n/CgbrvSbqRdQSDQWCNR5K9mLc7heDU1ADOyWotRaeZerX5xi33nJPu/qoVRzpPlv\nsvcC5gwHAgMBAAECggEAKqYlVm5ZVHcWhF4d2QGHcYeI+Fq4+4KmPszxw2BuOte7\n7MZxLqHk2TXPLhXX7qQHBdMQNMcFKGdO+zWZ/UBk89QrK8WCJuJJILhkK0iSZnMj\n+UTsKvRhjcsdjEXITZABf92/sU0s8m/z5OKP+ffSl2Iz0oISD+Zr/YMcFPIjzA4t\nAt/NdCvqJ0XTyd8fn2b95ZtcBaLvZrxmqXet3BZD1T5rzfQY2hPZvh1rY9g87RTp\n8mU+5NLSRsR5YhFpyHJOR6AwHwtHkmBYk4hJNNF63O0S9bgf6TBuw6WQV0tbhuPa\nCpiQu/MuPOgYIyxEnD6GrDBOB193ryrSh3JzrFRMjQKBgQD/zrKsEZ/aCl0gFhoN\nT2yO2U6ozkwj9xapO4C9xbUyl3UtLespTgSm2NAz7y0HBtuwi+nKftEekOzgmkO+\nbLPDu5VIXhB0hsWmW241vLRgfGRx6TZ3CQq6gyMVN18pZWJ6NHfxHOFSLAPYcnCQ\n80jjrXKser4JsdcKPozmklr7nQKBgQD6UblZ6GWQIYPtxDXOid+HfBd/c/a/+LK1\np/mQPW5l8Xq1tpoNtO4h9ZldYRH3fRh3E1kEL8Rp1+qbNGQfEnI+917wjXXOiCmo\nZgRcBr1H1hjnRYcz9EzI03H0i1gt7ABP4RUvyeUDfbUCjuRCZSCDg0SuYpPgKC+a\niTN2oa8u8wKBgQDVwfdz6dZV8UsYQN/MN45TYCtmy9y8QQFisSJHciqT+BQmiLR1\nc4hXk92HSFmsAYMa6A+Y8pf0ns4ScVYijds5uEpqio/dj7Eh7k0OAn4IEmos9eBZ\nX+jjKinq1LZkdR/xVl7T0HpInBcqi5acyW8jMhEdKAQdPcqf+Nzs32e/0QKBgDLy\nzVICXiGe4LZVOEpof4mY9UNou/FI0j7tCHuWNVEkfEBeAS8HA20ACw4ZgsmnuYIK\n+xRCEK0mWEbsu/AjFgPA358Ae9jkl+4BjaOZb48egYUY/rLRZ4t8lfYbIoB+R3X6\nrxBB/I3gWSZDJSxqXtrFrgX8ZHK8WywN/t6HfBuHAoGBAMXMFzp+PzQcCHNwyZW6\nfUHZ3g66xl9MRZIUpDdXsiwO9x9Xo1E2gVkrpRwp3oArQh4w6QND8h93qQoW/Px3\naTVx9NQUL/eaU7m0j5yy2Tk3zh0kL6RI+DKWWu3rtkfKGU1bP74wtVcCKkrxa3uf\n29IVgFUecgYQgik6rocC9+R0\n-----END PRIVATE KEY-----\n",
+  "client_email": "table-inserter@insuremi.iam.gserviceaccount.com",
+  "client_id": "104050337230930062500",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/table-inserter%40insuremi.iam.gserviceaccount.com"
+}

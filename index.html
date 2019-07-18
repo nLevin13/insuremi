@@ -1,64 +1,111 @@
 <!DOCTYPE html>
-<html lang=en xml:lang="en">
-
-<head>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <meta name="description" content="InSureMi">
-    <meta name="keywords" content="InSureMi">
-    <meta name="author" content="Zoë, Nir, Anna, Jonatan and the spiritual prescence of Doron">
-    <title>
-        InSureMi
-    </title>
-    <link rel="Icon" href="./img/logo.png">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <button onclick="post()" class="button primary">1. My Location</button>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+    function post() {
+      $.ajax({
+          type:'post',
+          url:'http://localhost:8001/server.py',
+          cache:false,
+          async:'asynchronous',
+          data:{name: 'oof', age: 18},
+          success: function(data) {
+            //places = JSON.parse(data)
+            //latest_data = data
+            console.log('it worked?');
+            console.log(data);
+          },
+          error: function(request, status, error) {
+            console.log("Error: " + error)
+          }
+        });
+    }
+    </script>
+    <!--<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9yPVHkCQSJ1pR1jR3bU8wXA8JRTykMD0&callback=initMap">
+    </script>-->
+  </body>
+</html>
 
-    <!-- cdn links -->
-    <!-- <script src="https://fb.me/react-0.14.0.js"></script>
-    <script src="https://fb.me/react-dom-0.14.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.25/browser.min.js"></script> -->
-    <!-- css file -->
-
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!--font awesome-->
-
-    <!--BOOTSTRAP 4-->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <!--BOOTSTRAP 4-->
-
-    <!--FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
-    <!--FONTS-->
-
-    <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css">
-    <!--CSS-->
 
 
-</head>
+<!--
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      /*
+      var coords = {lat: 0, lng: 0};
+      var map, infoWindow;
+      function initMap() {
+        // Try HTML5 geolocation.
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: coords,
+            zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            coords = pos;
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(coords);
+            console.log('uhfgjkdsjsdfn');
+              $.ajax({
+                  type:'post',
+                  url:'http://localhost:8001/server.py',
+                  cache:false,
+                  async:'asynchronous',
+                  data:pos,
+                  success: function(data) {
+                    //places = JSON.parse(data)
+                    //latest_data = data
+                    console.log('it worked?');
+                    console.log(data);
+                  },
+                  error: function(request, status, error) {
+                    console.log("Error: " + error)
+                  }
+               });
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
 
-<body>
-    <div id="root">
-        HELLO
-    </div>
-
-
-    <!-- OFFLINE -->
-    <script src="./offline/babel.js"></script>
-    <script src="./offline/react.js"></script>
-    <script src="./offline/react-dom.js"></script>
-    <!-- OFFLINE -->
-
-    <!--JQUERY-->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <!--JQUERY-->
-
-    <!-- js file -->
-    <script type="text/babel" src="./js/logic.js"></script>
-    <!-- js file -->
-</body>
-
-</HTML>
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }*/-->

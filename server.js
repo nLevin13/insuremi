@@ -18,6 +18,7 @@ var io = require('socket.io')(http);
 var express = require('express')
 
 app.get('/', function(req, res){
+	console.log(req.body);
   res.sendFile(__dirname + '/index.html');
 });
 

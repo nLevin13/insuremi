@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "insuremi",
+  "private_key_id": "c7f10ed8b02105458f0fc5fc0de78d077f92c652",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCxTEuZPWj22GOF\nQf+JVopDn8As7gxzaXSZB/F2lFEQtF3UZMwqknqDLtlYFsON5x0K/Z98KguvYBOT\nUwart9k52vgHvo5I7WsZ1N/dPxltnZb+rLC6EV4ckDIl9UmhL6pjfHxrKmWNobNn\nay+Pvl7kd4ptTfm8lhwC4gpUwNtawaYHqWfxX6iBiSNL/LbxP4kUApjPN31GCLlI\nc81SYxLncfFAv1SKwY7PL7YonNkl1B1gjLtJwUNaIjCQLvEeYQp1Dj8Qzp18F48k\nhB/AbBGUdBSJUYMZkbUJQzPPqha1BsUE5rzZmY9ci94XCkB1PNSfSZZ//Ni7Z62f\nU5gAHhvDAgMBAAECggEAG6Q69xGpby6uWWTAO7+3v7JEylx0qXur933TCfs2pkWQ\niWALqql6m0AvF3o5E8MP9pozBq8hcj6m3qWnmRcJMWlvmPl/AmSteXIEUuCXDM1w\ncJUo2mGBzC84+k0DJTOiu275kNWjzpCCwWFnIWB7N+BhPwhUoq++fz6RgMQujrf2\nEsg0tMhjzktMV/ewIqpr6bWbN9CJyjkU0iItq05K+PvDzrOP3TvoRTBjid67Ccr1\nfUJ5zLGA1IhA8vbgs5OoF3M9RDviXVtWWW4je8wKJVLa2dEv5aJUiIZj95ffJ+zr\nChfgW4N8QUfk3k5yEP0dFeEq3L9zF8p6IoPSlf4nuQKBgQD2TGTeL1rK6ppcw6tD\nXo9koGErW4GvfsdIV5FbKjpa46tAYHmVJHj28td/e3X5K5BMHV5ylK7qCZxfX5z7\nPa4l6aTY1M2tLij61sIgVvULbLIS1RUbyHcbNvo8VCHggiwxCg4ThOyKeSLzvzsk\nL5VCiulFaH1gAyBnD1c32UI2yQKBgQC4SB7Hy2Me10JLB4wD2y704aJhpy3qRZyK\nTcaz0GRkmXyVVDFjhxyFcV44mWBtvQ40gAC4TFvo8RX/Ndxx6fXPghhw6JQ/VaTT\nGPeUgPDhdzHiuBsjO/OmChWkQzmR98WrpOJyWac5goFz/Y2IMsialgE22UdG7e6b\nj9lfBDOoKwKBgH2kivAtCAvrkcMwrfU4D74tcmRD0exMqCxnP2daK1qiOYIltOA4\nMt0HFJeby5rIdlvdv4iEAJazQGoGxHYGCQieH9Hc/O8TVSRg2bbVpTumv1CMErCR\nmvDvIsgTwxRcU17Q2k1qyZ/6G7JsIydafrHrWwRlQU/xSF5KnRuIYRbBAoGAK9cE\nc5WALCsbm0vdVGGFZz5yafbipnQPDJv6JHb0Gzake8X+xeWztE9HEgHy/chXI8g7\n45xO1TjdecxveC4ni0kw1VOPSQ3v20R6SbrvE0RO+te/pP8zNJH7mgtgG8itHutn\n77pCXR0d/OEaFYe3T4dWHJ1OJqKd/CYZmVAflecCgYEAlOQowrd30ydHphQNbX7E\nSe3TV6hVNwiGvNi+qdIqL8L/2Xog4h2yhEzNEajpZqiWsNn4ZgUxhjruJKldRX6w\nen+lRRqAP/G6P743NxcRAbIbXItjzLWoV8PrcsTr3/J0rbCrfno9cxILoj+x/4C+\nX2STKXTlGLP5+vlZIYhW9lQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ohseeare@insuremi.iam.gserviceaccount.com",
+  "client_id": "109078693153998550421",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ohseeare%40insuremi.iam.gserviceaccount.com"
+}
