@@ -36,6 +36,7 @@ def img(filepath):
 def index():
     return template("./start.html")
 
+
 @route('/start')
 def index():
     return template("./start.html")

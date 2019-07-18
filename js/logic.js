@@ -41,6 +41,7 @@ $(document).ready(function () {
             }
         }, 1000);
     }
+
     $('#signUp').click(function () {
         window.location.href = 'sign_up2.html'
     });
@@ -50,24 +51,6 @@ $(document).ready(function () {
     $('#next_00').click(function () {
         window.location.href = 'q1.html'
     });
-
-    function hasGetUserMedia() {
-        return !!(navigator.mediaDevices &&
-          navigator.mediaDevices.getUserMedia);
-      }
-      
-      if (hasGetUserMedia()) {
-        // Good to go!
-        console.log('good to go')
-      } else {
-        alert('getUserMedia() is not supported by your browser');
-      }
-
-
-
-
-
-
 
 });
 
